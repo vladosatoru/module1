@@ -1,0 +1,45 @@
+@import url('variables.css');
+@import url('reset.css');
+
+html {
+  font-size: calc(var(--base-font-size) / var(--design-mobile-width) * 100vw);
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: calc(var(--base-font-size) / var(--design-tablet-width) * 100vw);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  html {
+    font-size: calc(var(--base-font-size) / var(--design-laptop-width) * 100vw);
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  html {
+    font-size: calc(var(--base-font-size) / var(--design-desktop-width) * 100vw);
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+}
+
+body {
+  font-family: var(--font-main);
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: var(--font-main);
+  background-color: var(--color-default-background);
+  color: var(--color-primary);
+}
+
+main {
+  flex: 1;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eduspace - Login page</title>
+  <link rel="stylesheet" href="./login.css" />
+  <link rel="stylesheet" href="../variables.css" />
+  <link rel="stylesheet" href="../reset.css" />
+  <link rel="stylesheet" href="../globals.css" />
+  <link rel="stylesheet" href="../components/header/header.css" />
+  <link rel="stylesheet" href="../components/footer/footer.css" />
+</head>
+<body>
+  <div id="header-container"></div>
+  
+  <main class="main">
+    <form action="" class="login-form">
+      <p class="form-label">Логин</p>
+      <input type="email" class="input" placeholder="Введите E-mail...">
+      <input type="password" class="input" placeholder="********">
+      <button class="submit-button" type="submit">Войти</button>
+      <a href="" class="forgot-password">Забыли пароль?</a>
+    </form>
+  </main>
+  
+  <div id="footer-container"></div>
+  <script>
+    fetch('../components/header/header.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('header-container').innerHTML = data)
+
+    fetch('../components/footer/footer.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('footer-container').innerHTML = data)
+  </script>
+</body>
+</html>

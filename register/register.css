@@ -1,0 +1,80 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0efef;
+}
+
+.registration-form {
+  min-width: 300px;
+  min-height: 300px;
+  border-radius: 1rem;
+  border: 1px solid #dadada;
+  padding: 1rem;
+  width: 30vw;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  gap: .5rem;
+  background-color: #fff;
+}
+
+.form-label {
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.input {
+  height: 2rem;
+  border-radius: .5rem;
+  padding: 1rem;
+  border: 1px solid #f0efef;
+}
+
+.submit-button {
+  width: 50%;
+  height: 2rem;
+  border-radius: 8px;
+  background-color: #16c032;
+  cursor: pointer;
+  color: #ffffff;
+  transition:  background-color .25s ease-in-out;
+  margin-top: .5rem;
+  margin: 1.5rem auto 0 auto;
+}
+
+.submit-button:hover {
+  background-color: #20cc3d;
+
+}
+
+.forgot-password {
+  text-align: center;
+  position: relative;
+  color: #4d4dd0;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.forgot-password:hover::after {
+  width: 100%;
+}
+
+.forgot-password::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: #4d4dd0;
+  width:0;
+  transition: width .25s ease-in-out;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  gap: .5rem;
+}
