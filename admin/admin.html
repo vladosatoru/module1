@@ -8,8 +8,34 @@
   <link rel="stylesheet" href="../variables.css" />
   <link rel="stylesheet" href="../reset.css" />
   <link rel="stylesheet" href="../globals.css" />
+  <link rel="stylesheet" href="../components/header/header.css" />
+  <link rel="stylesheet" href="../components/footer/footer.css" />
 </head>
 <body>
+  <div id="header-container"></div>
   
+  <main class="main">
+    <form action="" class="admin-form">
+      <p class="form-label">Административная панель</p>
+      <input type="email" class="input" placeholder="Название курса" required>
+      <input type="text" class="input" placeholder="Категория" required>
+      <input type="file" class="input file-input" multiple placeholder="Изображение обложки" required>
+      <input type="text" class="input" placeholder="Автор (ФИО или организация)" required>
+      <input class="input" placeholder="Описание курса" required>  
+      <input type="number" class="input" placeholder="Кол-во часов  " required>
+      <button class="submit-button" type="submit">Добавить курс</button>
+    </form>
+  </main>
+  
+  <div id="footer-container"></div>
+  <script>
+    fetch('../components/header/header.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('header-container').innerHTML = data)
+
+    fetch('../components/footer/footer.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('footer-container').innerHTML = data)
+  </script>
 </body>
 </html>

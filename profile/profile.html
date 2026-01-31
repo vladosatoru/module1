@@ -1,15 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eduspace - Profile page</title>
+  <title>Eduspace - Личный кабинет</title>
   <link rel="stylesheet" href="./profile.css" />
   <link rel="stylesheet" href="../variables.css" />
   <link rel="stylesheet" href="../reset.css" />
   <link rel="stylesheet" href="../globals.css" />
+  <link rel="stylesheet" href="../components/header/header.css" />
+  <link rel="stylesheet" href="../components/footer/footer.css" />
 </head>
 <body>
+  <div id="header-container"></div>
   
+  <main class="main">
+    <div class="profile-container">
+      <h1 class="profile-title">Личный кабинет</h1>
+      
+      <section class="profile-section user-info">
+        <h2 class="section-title">Информация о пользователе</h2>
+        <div class="info-grid">
+          <div class="info-item">
+            <span class="info-label">E-mail:</span>
+            <span class="info-value">ivan.petrov@example.com</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Имя:</span>
+            <span class="info-value">Иван</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Фамилия:</span>
+            <span class="info-value">Петров</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Дата рождения:</span>
+            <span class="info-value">15.03.1995</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Телефон:</span>
+            <span class="info-value">+7 (999) 123-45-67</span>
+          </div>
+        </div>
+      </section>
+      
+      <section class="profile-section my-courses">
+        <h2 class="section-title">Мои курсы</h2>
+        <div class="courses-list">
+          
+          <div class="course-card">
+            <div class="course-header">
+              <h3 class="course-title">JavaScript продвинутый</h3>
+              <span class="course-date">Начат: 15.01.2024</span>
+            </div>
+            <div class="course-progress">
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 75%"></div>
+              </div>
+              <span class="progress-text">75% пройдено</span>
+            </div>
+            <button class="btn btn-continue">Продолжить</button>
+          </div>
+          
+          <div class="course-card">
+            <div class="course-header">
+              <h3 class="course-title">Веб-дизайн с нуля</h3>
+              <span class="course-date">Начат: 10.02.2024</span>
+            </div>
+            <div class="course-progress">
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 40%"></div>
+              </div>
+              <span class="progress-text">40% пройдено</span>
+            </div>
+            <button class="btn btn-continue">Продолжить</button>
+          </div>
+          
+          <div class="course-card">
+            <div class="course-header">
+              <h3 class="course-title">Python для анализа данных</h3>
+              <span class="course-date">Начат: 05.03.2024</span>
+            </div>
+            <div class="course-progress">
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 20%"></div>
+              </div>
+              <span class="progress-text">20% пройдено</span>
+            </div>
+            <button class="btn btn-continue">Продолжить</button>
+          </div>
+          
+          <div class="course-card">
+            <div class="course-header">
+              <h3 class="course-title">Английский для IT</h3>
+              <span class="course-date">Начат: 20.03.2024</span>
+            </div>
+            <div class="course-progress">
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 90%"></div>
+              </div>
+              <span class="progress-text">90% пройдено</span>
+            </div>
+            <button class="btn btn-continue">Продолжить</button>
+          </div>
+          
+        </div>
+      </section>
+      
+      <section class="profile-section settings">
+        <h2 class="section-title">Настройки профиля</h2>
+        <div class="settings-options">
+          <button class="btn btn-change-password">Сменить пароль</button>
+        </div>
+      </section>
+      
+    </div>
+  </main>
+  
+  <div id="footer-container"></div>
+  
+  <script>
+    fetch('../components/header/header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('header-container').innerHTML = data)
+
+    fetch('../components/footer/footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer-container').innerHTML = data)
+  </script>
 </body>
 </html>
