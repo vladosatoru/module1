@@ -265,7 +265,7 @@
 }
 
 .subscribe {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-color: #667eea;
   color: white;
   padding: 60px 20px;
   border-radius: 10px;

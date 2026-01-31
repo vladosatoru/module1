@@ -5,11 +5,217 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eduspace - Catalog page</title>
   <link rel="stylesheet" href="./catalog.css" />
+  <link rel="stylesheet" href="../index.css" />
   <link rel="stylesheet" href="../variables.css" />
   <link rel="stylesheet" href="../reset.css" />
   <link rel="stylesheet" href="../globals.css" />
+  <link rel="stylesheet" href="../components/header/header.css" />
+  <link rel="stylesheet" href="../components/footer/footer.css" />
 </head>
 <body>
+  <div id="header-container"></div>
   
+  <main class="main">
+    <aside class="sidebar">
+      <div class="checkbox-wrapper">
+        <input type="checkbox" class="checkbox" id="it">
+        <label for="it" class="checkbox-label" >IT</label>
+      </div>
+      <div class="checkbox-wrapper">
+        <input type="checkbox" class="checkbox" id="business">
+        <label for="business" class="checkbox-label" >Бизнес</label>
+      </div>
+      <div class="checkbox-wrapper">
+        <input type="checkbox" class="checkbox" id="languages">
+        <label for="languages" class="checkbox-label" >Языки</label>
+      </div>
+      <div class="checkbox-wrapper">
+        <input type="checkbox" class="checkbox" id="design">
+        <label for="design" class="checkbox-label" >Дизайн</label>
+      </div>
+      <div class="checkbox-wrapper">
+        <input type="checkbox" class="checkbox" id="english">
+        <label for="english" class="checkbox-label" >Английский язык</label>
+      </div>
+    </aside>
+    <div class="courses">
+      <article class="course-card">
+        <div class="course-image"></div>
+        <div class="course-content">
+          <h3 class="course-title">JavaScript продвинутый</h3>
+          <span class="course-category">IT</span>
+          <p class="course-author">Автор: Иван Петров</p>
+          <div class="course-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="course-lessons">Уроков: 24</p>
+          <button class="btn btn-details">Подробнее</button>
+        </div>
+      </article>
+      <article class="course-card">
+        <div class="course-image"></div>
+        <div class="course-content">
+          <h3 class="course-title">Маркетинг для бизнеса</h3>
+          <span class="course-category">Бизнес</span>
+          <p class="course-author">Автор: Анна Сидорова</p>
+          <div class="course-rating">&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="course-lessons">Уроков: 18</p>
+          <button class="btn btn-details">Подробнее</button>
+        </div>
+      </article>
+      <article class="course-card">
+        <div class="course-image"></div>
+        <div class="course-content">
+          <h3 class="course-title">UI/UX дизайн</h3>
+          <span class="course-category">Дизайн</span>
+          <p class="course-author">Автор: Алексей Ковалев</p>
+          <div class="course-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="course-lessons">Уроков: 32</p>
+          <button class="btn btn-details">Подробнее</button>
+        </div>
+      </article>
+      <article class="course-card">
+        <div class="course-image"></div>
+        <div class="course-content">
+          <h3 class="course-title">Английский для IT</h3>
+          <span class="course-category">Языки</span>
+          <p class="course-author">Автор: Мария Иванова</p>
+          <div class="course-rating">&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="course-lessons">Уроков: 20</p>
+          <button class="btn btn-details">Подробнее</button>
+        </div>
+      </article>
+      <article class="course-card">
+        <div class="course-image"></div>
+        <div class="course-content">
+          <h3 class="course-title">Анализ данных</h3>
+          <span class="course-category">IT</span>
+          <p class="course-author">Автор: Дмитрий Смирнов</p>
+          <div class="course-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="course-lessons">Уроков: 28</p>
+          <button class="btn btn-details">Подробнее</button>
+        </div>
+      </article>
+      <article class="course-card">
+        <div class="course-image"></div>
+        <div class="course-content">
+          <h3 class="course-title">JavaScript продвинутый</h3>
+          <span class="course-category">IT</span>
+          <p class="course-author">Автор: Иван Петров</p>
+          <div class="course-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="course-lessons">Уроков: 24</p>
+          <button class="btn btn-details">Подробнее</button>
+        </div>
+      </article>
+      <article class="course-card">
+        <div class="course-image"></div>
+        <div class="course-content">
+          <h3 class="course-title">Маркетинг для бизнеса</h3>
+          <span class="course-category">Бизнес</span>
+          <p class="course-author">Автор: Анна Сидорова</p>
+          <div class="course-rating">&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="course-lessons">Уроков: 18</p>
+          <button class="btn btn-details">Подробнее</button>
+        </div>
+      </article>
+      <article class="course-card">
+        <div class="course-image"></div>
+        <div class="course-content">
+          <h3 class="course-title">UI/UX дизайн</h3>
+          <span class="course-category">Дизайн</span>
+          <p class="course-author">Автор: Алексей Ковалев</p>
+          <div class="course-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="course-lessons">Уроков: 32</p>
+          <button class="btn btn-details">Подробнее</button>
+        </div>
+      </article>
+      <article class="course-card">
+        <div class="course-image"></div>
+        <div class="course-content">
+          <h3 class="course-title">Английский для IT</h3>
+          <span class="course-category">Языки</span>
+          <p class="course-author">Автор: Мария Иванова</p>
+          <div class="course-rating">&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="course-lessons">Уроков: 20</p>
+          <button class="btn btn-details">Подробнее</button>
+        </div>
+      </article>
+      <article class="course-card">
+        <div class="course-image"></div>
+        <div class="course-content">
+          <h3 class="course-title">Анализ данных</h3>
+          <span class="course-category">IT</span>
+          <p class="course-author">Автор: Дмитрий Смирнов</p>
+          <div class="course-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="course-lessons">Уроков: 28</p>
+          <button class="btn btn-details">Подробнее</button>
+        </div>
+      </article>
+      <article class="course-card">
+        <div class="course-image"></div>
+        <div class="course-content">
+          <h3 class="course-title">JavaScript продвинутый</h3>
+          <span class="course-category">IT</span>
+          <p class="course-author">Автор: Иван Петров</p>
+          <div class="course-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="course-lessons">Уроков: 24</p>
+          <button class="btn btn-details">Подробнее</button>
+        </div>
+      </article>
+      <article class="course-card">
+        <div class="course-image"></div>
+        <div class="course-content">
+          <h3 class="course-title">Маркетинг для бизнеса</h3>
+          <span class="course-category">Бизнес</span>
+          <p class="course-author">Автор: Анна Сидорова</p>
+          <div class="course-rating">&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="course-lessons">Уроков: 18</p>
+          <button class="btn btn-details">Подробнее</button>
+        </div>
+      </article>
+      <article class="course-card">
+        <div class="course-image"></div>
+        <div class="course-content">
+          <h3 class="course-title">UI/UX дизайн</h3>
+          <span class="course-category">Дизайн</span>
+          <p class="course-author">Автор: Алексей Ковалев</p>
+          <div class="course-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="course-lessons">Уроков: 32</p>
+          <button class="btn btn-details">Подробнее</button>
+        </div>
+      </article>
+      <article class="course-card">
+        <div class="course-image"></div>
+        <div class="course-content">
+          <h3 class="course-title">Английский для IT</h3>
+          <span class="course-category">Языки</span>
+          <p class="course-author">Автор: Мария Иванова</p>
+          <div class="course-rating">&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="course-lessons">Уроков: 20</p>
+          <button class="btn btn-details">Подробнее</button>
+        </div>
+      </article>
+      <article class="course-card">
+        <div class="course-image"></div>
+        <div class="course-content">
+          <h3 class="course-title">Анализ данных</h3>
+          <span class="course-category">IT</span>
+          <p class="course-author">Автор: Дмитрий Смирнов</p>
+          <div class="course-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="course-lessons">Уроков: 28</p>
+          <button class="btn btn-details">Подробнее</button>
+        </div>
+      </article>
+    </div>
+  </main>
+  
+  <div id="footer-container"></div>
+  <script>
+    fetch('../components/header/header.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('header-container').innerHTML = data)
+
+    fetch('../components/footer/footer.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('footer-container').innerHTML = data)
+  </script>
 </body>
 </html>
