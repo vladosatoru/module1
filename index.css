@@ -363,11 +363,15 @@
   }
   
   .partners {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 20px;
   }
   
   .partner-logo {
-    width: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
     height: 60px;
   }
 }

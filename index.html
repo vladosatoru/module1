@@ -12,6 +12,24 @@
   <title>Eduspace - Онлайн обучение</title>
 </head>
 <body>
+  <style>
+    body {
+      background-color: #1a1a1a !important;
+      transition: background-color .25s ease-in-out, color .25s ease-in-out;
+    }
+
+    header  {
+      color: #FFFFFF !important;
+    }
+
+    li:hover  {
+      color: #1a1a1a !important
+    }
+
+    h2 {
+      color: #FFFFFF !important;
+    }
+  </style>
   <div id="header-container"></div>
   
   <main class="main">
@@ -146,7 +164,7 @@
       <div class="partners">
         <div class="partner-logo">Университет 1</div>
         <div class="partner-logo">IT Компания</div>
-        <div class="partner-logo">Образовательный центр</div>
+        <div class="partner-logo">ТКУиК</div>
       </div>
     </section>
     
@@ -173,6 +191,7 @@
       .then(response => response.text())
       .then(data => {
         document.getElementById('header-container').innerHTML = data;
+        addThemeToggleListener()
       });
 
     fetch('./components/footer/footer.html')
@@ -205,6 +224,23 @@
         goToSlide(currentSlide);
       }, 5000);
     });
+
+    function addThemeToggleListener() {
+      const themeToggle = document.getElementById('themeToggle');
+      if (themeToggle) {
+        themeToggle.addEventListener('click', function() {
+          const currentPage = window.location.pathname;
+          
+          if (currentPage.includes('index-light.html')) {
+            window.location.href = 'index.html';
+          } else {
+            window.location.href = 'index-light.html';
+          }
+        });
+      } else {
+        console.warn('Кнопка themeToggle не найдена');
+      }
+    }
   </script>
 </body>
 </html>
